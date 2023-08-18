@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+    int arr[] = {20,30,40};
+    int* p = arr;
+    int q;
+    q = ++*p;
+    q=*p++;
+    q=*++p;
+    printf("%d %d %d %d", arr[0], arr[1],*p, q);
+}
